@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+ 
+/* creating css variable*/
+:root{
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+
+/**scrolling behavior of the website **/
+html{
+    scroll-behavior: smooth;
+}
+
+/* common styles starts here */
+button,
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.fullContainer{
+    width:100%;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+section{
+    padding: 100px 0;
+    position: relative;
+}
+/* common styles ends here */
+
+
+
+/* Home starts */
+header {
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+header .container .logo{
+    padding: 15px 0;
+}
+header .container .logo img{
+ border-radius: 15px;
+}
+header .container .logo label{
+    color: #fff;
+    padding: 10px 0;
+   
+
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+ background-color: var(--themeRed);
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/SchoolChildren.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+.banner h1 span{
+    background-color: var(--themeRed);
+    line-height: 3.5rem;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.banner p{
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+.banner button{
+    background-color: var(--themeRed);
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Home ends */
+
+
+/*About Section starts here */
+
+#aboutSection .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+
+}
+#aboutSection .card > div{
+    width: 350px;
+    height: 215px;
+    padding: 35px;
+    box-sizing: border-box;
+    background-color: var(--gray);
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+#aboutSection .card > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--themeRed);
+    padding: 55px;
+    transition: 0.4s;
+    height: auto;
+
+}
+#aboutSection .card >div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#aboutSection .card > div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+#aboutSection .card > div button{
+    background-color: var(--themeRed);
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+    /**
+     border: 1px solid var(--themeRed);
+     outline: none;
+     padding: 7px 15px;
+     margin-top: 15px;
+     font-size: 13px;
+    */
+}
+
+#aboutSection .card >div:hover button{
+   
+   
+    border: 1px solid var(--themeRed);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+/*About Section ends here */
+
+/******************************************************************************************************************************************/
+
+/**donateSection starts here **/
+
+.donate{
+    background: #efefef;
+
+}
+.donate .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+.donate .boxContainer .box{
+    background-color: #fff;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 3 0px #c5c5c5;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.donate .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    background-size: cover;
+
+}
+.donate .boxContainer .box .cardImage::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.donate .boxContainer .box:nth-child(1) .cardImage,
+.donate .boxContainer .box:nth-child(1) .cardImage::after{
+    background-image: url(../assets/images/boy1.jpg);
+}
+
+.donate .boxContainer .box:nth-child(2) .cardImage,
+.donate .boxContainer .box:nth-child(2) .cardImage::after{
+    background-image: url(../assets/images/boy1.jpg);
+}
+.donate .boxContainer .box:nth-child(3) .cardImage,
+.donate .boxContainer .box:nth-child(3) .cardImage::after{
+    background-image: url(../assets/images/boy1.jpg);
+}
+.donate .boxContainer .box:nth-child(4) .cardImage,
+.donate .boxContainer .box:nth-child(4) .cardImage::after{
+    background-image: url(../assets/images/boy1.jpg);
+}
+.donate .boxContainer .box:hover .cardImage::after{
+    filter: grayscale(0%);
+    top: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.donate .boxContainer .box .programTitle{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+.donate .boxContainer .box .donationCounts{
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+
+}
+
+.donate .boxContainer .box .donationCounts span{
+    color: var(--themeRed);    
+}
+.donate .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--themeRed);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/**donateSection ends here **/
+
