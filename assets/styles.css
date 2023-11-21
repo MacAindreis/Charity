@@ -370,11 +370,18 @@ header nav ul li a:hover{
     transform: rotate(45deg) translate(50%, 50%);
     border: 3px solid #fff;
 } */
-
-
 /***contactSection end here ***/
 
 
 /**footer starts here **/
+footer{
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+ 
 
 
+/**footer ends here **/
