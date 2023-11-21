@@ -341,3 +341,40 @@ header nav ul li a:hover{
 
 /**donateSection ends here **/
 
+
+/**contactSection starts here ***/
+
+.contact{
+    background-image: url(../assets/images/pattern.jpg);
+    color: #fff;
+}
+.contact .joinTitle{
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+.contact .joinTitle span{
+    font-weight: 700;
+    color: #fff;
+}
+/* .contact .joinTitle::after{
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(55% - 10px);
+    top: calc(50% - 60px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+} */
+
+
+/***contactSection end here ***/
+
+
+/**footer starts here **/
+
+
