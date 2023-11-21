@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/styles.css" />
+    <script src="/assets/script.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,8 @@
                 veniam id reprehenderit, neque expedita, perspiciatis, velit maiores
                 similique exercitationem sunt non!
             </p>
-            <button>Donate</button>
+            <button class="donateButton">Donate</button>
+
         </div>
     </div>
     <!--banner ends here-->
@@ -65,27 +67,28 @@
                 <div class="donationsBox">
                     <div class="title"> Give Donations </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <button> Donation Now </button>
+                    <button class="donateButton">Donate</button>
+
                 </div>
                 <!--DonationsBox ends here -->
 
                 <div class="volunteerBox">
                     <div class="title"> Become a volunteer </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <button> Become Now </button>
+                    <button class="donateButton"> Become Now </button>
                 </div>
                 <!--VolunteerBox ends here -->
 
                 <div class="sponsorshipBox">
                     <div class="title"> Sponsorship </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <button> Sponsor Now </button>
+                    <button class="donateButton"> Sponsor Now </button>
                 </div>
                 <!--SponsorshipBox ends here -->
 
@@ -109,7 +112,8 @@
                     <div class="donationCounts">
                         Donations Goal <span> GH&#8373 658 </span>
                     </div>
-                    <button> Donate Now </button>
+                    <button class="donateButton">Donate</button>
+
                 </div>
                 <!--box ends here -->
 
@@ -121,37 +125,40 @@
                     <div class="donationCounts">
                         Donations Goal <span> GH&#8373 900 </span>
                     </div>
-                    <button> Donate Now </button>
-                    <!--box ends here -->                    
+                    <button class="donateButton">Donate</button>
+
+                    <!--box ends here -->
                 </div>
 
-            <div class="box">
-                <div class="cardImage">
+                <div class="box">
+                    <div class="cardImage">
+
+                    </div>
+                    <div class="programTitle"> Dedicating to helping kids </div>
+                    <div class="donationCounts">
+                        Donations Goal <span> GH&#8373 658 </span>
+                    </div>
+                    <button class="donateButton">Donate</button>
 
                 </div>
-                <div class="programTitle"> Dedicating to helping kids </div>
-                <div class="donationCounts">
-                    Donations Goal <span> GH&#8373 658 </span>
+                <!--box ends here -->
+
+                <div class="box">
+                    <div class="cardImage">
+
+                    </div>
+                    <div class="programTitle"> Clean water for people </div>
+                    <div class="donationCounts">
+                        Donations Goal <span> GH&#8373 658 </span>
+                    </div>
+                    <button class="donateButton">Donate</button>
+
                 </div>
-                <button> Donate Now </button>  
+                <!--box ends here -->
+
             </div>
-            <!--box ends here -->
-
-            <div class="box">
-                <div class="cardImage">
-
-                </div>
-                <div class="programTitle"> Clean water for people </div>
-                <div class="donationCounts">
-                    Donations Goal <span> GH&#8373 658 </span>
-                </div>
-                <button> Donate Now </button>
-            </div>
-            <!--box ends here -->
-
-        </div>   
-        <!-- /.boxContainer ends here -->
-      </div>
+            <!-- /.boxContainer ends here -->
+        </div>
     </section>
     <!--donateSection ends here-->
 
@@ -160,8 +167,8 @@
         <div class="container">
             <div class="joinTitle">Adopt a child & <span>save lives</span> </div>
             <p>Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Molestias officia nobis,
-                  neque provident facilis blanditiis a veniam. Dolores inventore hic illo minima, 
+                Molestias officia nobis,
+                neque provident facilis blanditiis a veniam. Dolores inventore hic illo minima,
                 tempora natus cupiditate pariatur sequi commodi tenetur modi!</p>
         </div>
 
@@ -174,20 +181,20 @@
             <div class="newletterContainer">
                 <img src="/assets/images/logo2.jpg" alt="logo" style="width: 50px; height: 50px" />
                 <label for="logot">CharFund</label>
-                <p> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Velit, ullam corporis sapiente quasi,
                 </p>
                 <input type="text" placeholder="Enter your email id here ">
             </div>
             <div class="linkContainer">
-                <div class="title">  Quick Links </div>
+                <div class="title"> Quick Links </div>
                 <ul>
                     <li><a href="#homeSection">Home</a></li>
                     <li><a href="#aboutSection">About</a></li>
                     <li><a href="#donateSection">Donate</a></li>
                     <li><a href="#contactSection">Contact</a></li>
-                </ul>   
+                </ul>
 
             </div>
             <div class="connectContainer">
@@ -197,18 +204,34 @@
                     P.O.BOX AF Adentan-Accra<br>
                 </p>
 
-                 <p>
+                <p>
                     info@gmail.com
-                 </p>
-                 <p>
+                </p>
+                <p>
                     +233 100050000
-                 </p>
+                </p>
             </div>
 
         </div>
     </footer>
-
     <!--footer ends here-->
+    <!-- Donation Modal -->
+    <div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Donation Form</h2>
+            <!-- Add your donation form fields here -->
+            <form id="donationForm">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="number" placeholder="Donation Amount" name="amount" required>
+                <button type="submit" id="donateSubmit">Submit Donation</button>
+
+            </form>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
