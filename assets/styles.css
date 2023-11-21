@@ -87,6 +87,8 @@ header .container .logo img{
 header .container .logo label{
     color: #fff;
     padding: 10px 0;
+    position: absolute;
+    left: 10%;
    
 
 }
@@ -380,7 +382,58 @@ footer{
     padding: 50px 0;
     font-size: 14px;
 }
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 0 5px 0; 
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+}
+footer  p{
+    margin-bottom: 10px;
+}
+footer .linkContainer ul{
+    list-style: none;
+}
+footer .linkContainer ul li a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #7f7f7f;
+    display: inline-block;
+    transition: 0.3s;
+}
 
+footer .linkContainer ul li a:hover{
+    color: var(--themeRed);
+}
+footer .newletterContainer img{
+    height: 40px;
+    margin-bottom: 11px;
+    border-radius: 10px;
+}
+footer .newletterContainer label{
+    position: absolute;
+    top: 387%; 
+    left: 10%;
+    color: #fff;
+}
+footer .newletterContainer input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #ccc;
+    
+}
  
 
 
