@@ -478,4 +478,56 @@ footer .newletterContainer input{
       width: 80%;
     }
   }
+
+  /**responsiveness**/
+   @media screen and (max-width: 1140px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+     }
+    }
+ @media screen and (max-width:1080px){
+ .banner h1{
+ margin-top: 200px;     
+        }
+ #aboutSection .card{
+ justify-content: space-around;
+ height: auto;
+ }
+ #aboutSection .card > div{         
+margin: 10px 0;
+ }
+}
+ @media screen and (max-width:1024px) {
+ .banner{
+  background-position-x: 45%;
+ }
+ .banner h1{
+   font-size: 2.5rem;
+ }
+ .donate .boxContainer{
+  grid-template-columns: repeat(2, 1fr);
+  }
+} 
+ @media screen and(max-width: 768px){
+header nav{
+    position: relative;
+    border: 2px solid #fff;
+    height:30px;
+    width:30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+ }
+                
+
+            
+        
+
+         
+
+  
+
+    
+  
   
