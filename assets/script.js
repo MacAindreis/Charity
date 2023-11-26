@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Close the modal after showing the alert
       modal.style.display = "none";
   
-      // Additional code for handling form data can go here
+     
     });
   });
   
